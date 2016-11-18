@@ -1,0 +1,54 @@
+{
+	"root": {
+		"responsestatus": "success",
+		"tableresults": {
+			"detailline": [{
+				"name": "product_id",
+				"value": "2",
+				"link": null
+			},
+			{
+				"name": "advertiser_id",
+				"value": "1-畅思广告平台",
+				"link": "http://91mobcastle.com/detail/advertiser-detail?id=1"
+			},
+			{
+				"name": "product_name",
+				"value": "诛仙",
+				"link": null
+			},
+			{
+				"name": "product_type",
+				"value": "Moblie Application",
+				"link": null
+			},
+			{
+				"name": "product_OS",
+				"value": "iOS",
+				"link": null
+			},
+			{
+				"name": "product_lp",
+				"value": "https://itunes.apple.com/cn/app/zhu-xian-guan-fang-wei-yi/id1088753863?mt=8",
+				"link": null
+			},
+			{
+				"name": "product_dcp",
+				"value": null,
+				"link": null
+			},
+			{
+				"name": "product_status",
+				"value": "active",
+				"link": null
+			}]
+		},
+		"relatedresults": {
+			"relatedline": [{
+				"label": "16-诛仙01-pause-2",
+				"link": "http://91mobcastle.com/detail/offer-detail?id=16"
+			}]
+		},
+		"precordresults": null
+	}
+}

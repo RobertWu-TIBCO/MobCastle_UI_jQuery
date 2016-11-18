@@ -1,0 +1,176 @@
+
+/*单选框*/
+.radio-style{
+	margin-right:15px;
+}
+.radio-style input[type=radio] {
+    width:0;
+}
+
+.radio-style input[type=radio] + i {
+    vertical-align: middle;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0 3px;
+    vertical-align: middle;
+
+}
+
+.radio-style:hover input[type=radio] + i {
+
+    border: 1px solid #22b7b5;
+    background-color: #fff;
+
+}
+
+.radio-style input[type=radio]:checked + i {
+    border: 4px solid #22b7b5;
+    background-color: #fff;
+
+}
+
+/*复选框*/
+.checkbox-style input[type=checkbox] {
+    width:0;
+}
+
+.checkbox-style input[type=checkbox] + i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-right: 3px;
+
+    vertical-align: middle;
+}
+
+.checkbox-style:hover input[type=checkbox] + i {
+    border: 1px solid #3b99fd;
+}
+
+.checkbox-style input[type=checkbox]:checked + i {
+    background-color: #3b99fd;
+    border-color: #3b99fd;
+}
+
+.checkbox-style input[type=checkbox]:checked + i:after {
+    content: url(../images/checked.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 12px;
+    line-height: 12px;
+    width: 12px;
+
+}
+
+/*圆角开关按钮*/
+.radiusSwitch input[type=checkbox] {
+    width:0;
+}
+
+.radiusSwitch {
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+.radiusSwitch input[type=checkbox] + i{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+.radiusSwitch input[type=checkbox] + i:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background-color: #fff;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+    transition: border 0.4s, box-shadow 0.4s;
+}
+
+.radiusSwitch input[type=checkbox]:checked.colorBlue + i:before {
+    border-color: #1AB394;
+    box-shadow: #1AB394 0px 0px 0px 16px inset;
+    background-color: #1AB394;
+    transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+.radiusSwitch input[type=checkbox]:checked.colorRed + i:before {
+    border-color: #ED5565;
+    box-shadow: #ED5565 0px 0px 0px 16px inset;
+    background-color: #ED5565;
+    transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+.radiusSwitch input[type=checkbox] + i:after {
+    content: " ";
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    height:100%;
+    position: absolute;
+    top: 1px;
+    width: 60%;
+    left: 0px;
+    transition: left 0.2s;
+
+}
+
+.radiusSwitch input[type=checkbox]:checked + i:after {
+    left: 40%;
+    transition: left 0.2s;
+}
+
+/*向导*/
+.tab-panel, .guide-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.guide-panel.active {
+    display: block;
+}
+/*顶部菜单栏*/
+.topNav{  color: #fff; cursor: pointer; margin-bottom:300px;}
+.topNav:after, .topNav:before {
+    clear: both;
+    content: "";
+    display: table;
+}
+.topNav li{ position: relative; }
+.topNav>li {float: left; width:10%;color: #333;text-align: center;}
+.topNav>li .caret{margin-left: 5px; color: #555;}
+.topNav>li.active{background-color:#e7e7e7;}
+.topNav>li:hover{ background-color:#e7e7e7;}
+.topNav li:hover>ul{ display: block;}
+.topNav>li>ul{ display: none; position: absolute; top:100%; left:0; width:100%; background-color: #f3f3f4;}
+.topNav>li>ul li>ul{display: none; position: absolute; top:0; left:100%; width:100%; background-color: #f3f3f4;}
+/*jqGrid 分页标签*/
+.bgBlue{ background-color:#002438 ;}

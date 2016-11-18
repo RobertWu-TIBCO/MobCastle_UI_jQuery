@@ -1,0 +1,76 @@
+.btn{
+  font-size: 12px;
+}
+.btn-default{
+	border-color:#e7eaec;
+	font-size: 12px;
+}
+.btn-w-m{min-width: 110px;}
+/*btn*/
+.btn-blue {
+  background-color: #1c84c6;
+  border-color: #1c84c6;
+  color: #FFFFFF;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue,
+.btn-blue:active:focus,
+.btn-blue:active:hover,
+.btn-blue.active:hover,
+.btn-blue.active:focus {
+  background-color: #1a7bb9;
+  border-color: #1a7bb9;
+  color: #FFFFFF;
+}
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue {
+  background-image: none;
+}
+.btn-blue.disabled,
+.btn-blue.disabled:hover,
+.btn-blue.disabled:focus,
+.btn-blue.disabled:active,
+.btn-blue.disabled.active,
+.btn-blue[disabled],
+.btn-blue[disabled]:hover,
+.btn-blue[disabled]:focus,
+.btn-blue[disabled]:active,
+.btn-blue.active[disabled],
+fieldset[disabled] .btn-blue,
+fieldset[disabled] .btn-blue:hover,
+fieldset[disabled] .btn-blue:focus,
+fieldset[disabled] .btn-blue:active,
+fieldset[disabled] .btn-blue.active {
+  background-color: #1f90d8;
+  border-color: #1f90d8;
+}
+.btn-primary{background:#22b7b5; border: 1px solid #22b7b5;}
+.btn-primary:hover{background:#1e9e9c;border: 1px solid #1e9e9c;}
+.btn-primary.btn-outline{color:#27b9b7; border-color:#27b9b7; background: none;}
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary.active:focus {
+  background-color: #27b9b7;
+  border-color: #27b9b7;
+  color: #FFFFFF;
+}
+/*ÑéÖ¤*/
+.has-error>[data-check]:focus,.has-error>[data-check],.has-error>[data-required]:focus,.has-error>[data-required]{border-color:red;}
+.has-error+small.error-info{ color: red; font-size:15px; display: block; float: left;}

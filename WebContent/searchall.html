@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MobCastle</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="header">
+				<div class="navbar-header">
+					<div class="hidden-xs hidden-sm f-l">
+						<div class="navbar-header navbar-left">
+							<a class="navbar-brand" href="index.html"> <img
+								src="images/logo.png" width="196" height="34">
+							</a>
+						</div>
+					</div>
+					<div class="hidden-xs visible-sm-block f-l">
+						<div class="navbar-header navbar-left">
+							<a class="navbar-brand" href="#"> <img src="images/logo.png"
+								width="196" height="34">
+							</a>
+						</div>
+					</div>
+					<div class="visible-xs-block f-l">
+						<div class="navbar-header navbar-left">
+							<a class="navbar-brand" href="#"> <img
+								src="images/logo-small.png">
+							</a>
+						</div>
+					</div>
+					<button class="navbar-toggle collapsed" type="button"
+						data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+				</div>
+				<ul class="nav-search">
+					<form class="search-form">
+						<input type="text/css" class="search">
+					</form>
+				</ul>
+
+				<div class="navbar-collapse bs-navbar-collapse collapse in"
+					role="navigation">
+					<ul class="nav navbar-top-links navbar-right">
+						<li class="set-box"><a data-toggle="dropdown"
+							class="dropdown-toggle" href="#"> <span class="user">创建</span>
+								<b class="caret"></b>
+						</a>
+							<ul class="dropdown-menu animated fadeInRight m-t-xs">
+								<!-- <li><a href="javascript:void(0);">设置</a></li>-->
+								<li><a href="add/advertiser-add.html">广告主</a></li>
+								<li><a href="add/product-add.html">产品</a></li>
+								<li><a href="add/offer-add.html">投放订单</a></li>
+								<li><a href="add/campaign-add.html">投放活动</a></li>
+								<li><a href="add/n-add.html">渠道</a></li>
+							</ul></li>
+						<li class="admin"><a data-toggle="dropdown"
+							class="dropdown-toggle" href="#"> <span class="user">Admin</span>
+								<b class="caret"></b> <img alt="image" class="img-circle"
+								src="images/profile_small.jpg">
+						</a>
+							<ul class="dropdown-menu animated fadeInRight m-t-xs">
+								<!-- <li><a href="javascript:void(0);">设置</a></li>-->
+								<li><a href="#">个人中心</a></li>
+								<li><a href="#">退出</a></li>
+							</ul></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="wrapper">
+					<div class="search-title">
+						<h3 class="title">
+							<i class="titile-icon"></i><span>搜索列表</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="wrapper">
+					<div class="wrapper-title">
+						<h4 class="title">
+							<span>广告主</span>
+						</h4>
+					</div>
+					<div class="wrapper-content">
+						<div class="timeline-item timeline-list">
+							<ul id="advertiserresults" class="box">
+							</ul>
+						</div>
+						<div class="timeline-pageup">
+							<a class="btn btn-default">上一页</a> <a
+								class="btn btn-outline btn-primary">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="wrapper">
+					<div class="wrapper-title">
+						<h4 class="title">
+							<span>产品</span>
+						</h4>
+					</div>
+					<div class="wrapper-content">
+						<div class="timeline-item timeline-list">
+							<ul id="productresults" class="box">
+							</ul>
+						</div>
+						<div class="timeline-pageup">
+							<a class="btn btn-default">上一页</a> <a
+								class="btn btn-outline btn-primary">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="wrapper">
+					<div class="wrapper-title">
+						<h4 class="title">
+							<span>投放订单</span>
+						</h4>
+					</div>
+					<div class="wrapper-content">
+						<div class="timeline-item timeline-list">
+							<ul class="box" id="offerresults">
+							</ul>
+						</div>
+						<div class="timeline-pageup">
+							<a class="btn btn-default">上一页</a> <a
+								class="btn btn-outline btn-primary">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="wrapper">
+					<div class="wrapper-title">
+						<h4 class="title">
+							<span>渠道</span>
+						</h4>
+					</div>
+					<div class="wrapper-content">
+						<div class="timeline-item timeline-list">
+							<ul class="box" id="nresults">
+							</ul>
+						</div>
+						<div class="timeline-pageup">
+							<a class="btn btn-default">上一页</a> <a
+								class="btn btn-outline btn-primary">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dataset/bwsetjson.js"></script>
+	<script src="anysearch.js"></script>
+	<!-- <script src="searchall.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobCastleAD</title>
+     <link rel="stylesheet" href="../css/factory.css">
+     <!--下拉菜单的 css文件-->
+    <link rel="stylesheet" href="../css/plugins/select/bootstrap-select.min.css"/>
+    <!--日期选择组件css-->
+    <link rel="stylesheet" type="text/css" href="../css/plugins/date/daterangepicker.css"/>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="header">
+                <div class="navbar-header">
+                    <div class="hidden-xs hidden-sm f-l">
+                        <div class="navbar-header navbar-left">
+                            <a class="navbar-brand" href="#">
+                               <img src="../images/logo.png" width="196" height="34">
+                            </a>
+                         </div>
+                    </div>
+                    <div class="hidden-xs visible-sm-block f-l">
+                        <div class="navbar-header navbar-left">
+                            <a class="navbar-brand" href="#">
+                                <img src="../images/logo.png" width="196" height="34">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="visible-xs-block f-l">
+                        <div class="navbar-header navbar-left">
+                            <a class="navbar-brand" href="#">
+                                <img src="../images/logo-small.png">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <ul class="nav-search">
+                    <form class="search-form">
+                        <input type="text/css">
+                    </form> 
+                </ul>
+           
+                 <div class="navbar-collapse bs-navbar-collapse collapse in" role="navigation">
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="set-box">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="user">创建</span> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <!-- <li><a href="javascript:void(0);">设置</a></li>-->
+                                <li><a href="#">广告主</a></li>
+                                <li><a href="#">产品</a></li> 
+                                <li><a href="#">投放订单</a></li>
+                                <li><a href="#">投放活动</a></li>
+                                <li><a href="#">渠道</a></li>
+                            </ul>
+                        </li>
+                        <li class="admin">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="user">Admin</span> <b class="caret"></b>
+                                <img alt="image" class="img-circle" src="../images/profile_small.jpg">
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <!-- <li><a href="javascript:void(0);">设置</a></li>-->
+                                <li><a href="#">个人中心</a></li> 
+                                <li><a href="#">退出</a></li>
+                            </ul>
+                        </li>
+                       
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-title">
+                <h3 class="title"><i class="titile-icon"></i>编辑渠道</h3>
+            </div>
+            <div class="wrapper-content">
+                <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">
+                       ID:
+                    </label>
+                   <div class="col-lg-2 col-md-3 col-sm-12">
+                        <label class="control-label">32</label>
+                   </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">
+						<span class="text-red">*</span>邮箱:
+					</label>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <input type="text" class="form-control" value="elaine@idvert.com">
+                   </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">
+						<span class="text-red">*</span>密码:
+					</label>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <input type="text" class="form-control" value="123456">
+                   </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">
+						<span class="text-red">*</span>名称:
+					</label>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <input type="text" class="form-control" value="Idvert">
+                   </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">联系地址:</label>
+                   <div class="col-lg-7 col-md-9 col-sm-12">
+                        <input type="text" class="form-control" id="focusedInput" value="北京市">
+                   </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">联系人:</label>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <input type="text" class="form-control" value="Elaine Zhong">
+                   </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">联系电话:</label>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <input type="text" class="form-control" value="17773116484">
+                   </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">
+                        <span class="text-red">*</span>结算方式:
+                    </label>
+                   <div class="col-lg-1 col-md-3 col-sm-12">
+                        <!-- Single button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            CPA  <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">CPA</a></li>
+                                <li><a href="#">CPC</a></li>
+                                <li><a href="#">CPM</a></li>
+                                <li><a href="#">CPT</a></li>
+                            </ul>
+                        </div>
+                   </div>
+                    <label class="control-label col-lg-1 col-md-3 col-sm-12">
+                        <span class="text-red">*</span>结算币种:
+                    </label>
+                   <div class="col-lg-1 col-md-3 col-sm-12">
+                        <!-- Single button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            CNY <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">CNY</a></li>
+                                <li><a href="#">USD</a></li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">转化回调:</label>
+                    <div class="col-lg-7 col-md-9 col-sm-12">
+                        <input type="text" class="form-control" value="http://click.idvert.click/cr?trans_id=${cid}">
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">链接模板:</label>
+                    <div class="col-lg-7 col-md-9 col-sm-12">
+                        <input type="text" class="form-control" value="cid={trans_id}&s1={exp3}&s2={affiliate_id}">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">描述:</label>
+                   <div class="col-lg-4 col-md-3 col-sm-12">
+                        <textarea class="form-control textarea-h-80" placeholder="牛逼的描述"></textarea>
+                   </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2 col-md-3 col-sm-12">
+                        <span class="text-red">*</span>状态:
+                    </label>
+                   <div class="col-lg-2 col-md-3 col-sm-12">
+                        <!-- Single button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            active <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">active</a></li>
+                                <li><a href="#">pause</a></li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2 col-md-3 col-sm-12 col-lg-offset-2">
+                        <a class="btn btn-primary btn-w-m" id="buy">保存</a>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- date scripts -->
+<script src="../js/plugins/date/moment.min.js"></script>
+<script src="../js/plugins/date/explme.js"></script>
+<script src="../js/plugins/date/daterangepicker.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="../js/inspinia.js"></script>
+<!--下拉框插件-->
+<script src="../js/plugins/select/bootstrap-select.min.js"></script>
+<!--下拉框国际化-->
+<script src="../js/plugins/select/i18n/defaults-zh_CN.js"></script>
+<!--封装select使用方法-->
+<script src="../js/plugins/select/select.js"></script>
+<!--下拉框插件使用-->
+<script src="../js/style.js"></script>
+<script src="../js/dataset/bwsetjson.js"></script>
+<script src="../js/dataset/init.js"></script>
+<script src="orecord_edit.js"></script>
+</body>
+</html>
