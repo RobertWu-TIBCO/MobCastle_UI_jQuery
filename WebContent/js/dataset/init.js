@@ -24,6 +24,15 @@ function selectAll(obj, id) {
 	}
 }
 $(function() {
+	$('input[name="datefilter"]').datepicker({
+		singleDatePicker : true,
+		Time : new Date(),
+		startDate : "2014-05-08",
+		endDate : "2014-07-08",
+		callback : function(i) {
+			console.log(i);
+		}
+	});
 	//初始化下拉列表数据
 	//一般下来框
 	initSelect('selectpicker', data);
@@ -43,13 +52,4 @@ $(function() {
 	//远程获取json数据
 	//initSelectByAjax('selectpickerAjax',url);
 	//  $('#'+selectId).selectpicker('val','2');//选中value为2的选项
-});
-$('input[name="datefilter"]').datepicker({
-	singleDatePicker : true,
-	Time : "2014-05-07",
-	startDate : "2014-05-08",
-	endDate : "2014-07-08",
-	callback : function(i) {
-		console.log(i);
-	}
 });

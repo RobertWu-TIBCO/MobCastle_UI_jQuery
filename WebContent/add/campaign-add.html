@@ -90,12 +90,13 @@
             </div>
             <div class="wrapper-content">
                 <form class="form-horizontal">
+					<label class="control-label" id="campaign_id"></label>
                 <div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">
                         <span class="text-red">*</span>投放订单:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control"  data-required="true">
+                        <input id="offer_id" type="text" class="form-control"  data-required="true">
                    </div>
                 </div>
                 <div class="form-group">
@@ -103,7 +104,7 @@
                         <span class="text-red">*</span>渠道:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true">
+                        <input id="n_id" type="text" class="form-control" data-required="true">
                    </div>
                 </div>
 				<div class="form-group">
@@ -111,7 +112,7 @@
                         <span class="text-red">*</span>转化回调:
                     </label>
                    <div class="col-lg-7 col-md-9 col-sm-12">
-                        <input type="text" class="form-control" data-check="url" data-required="true">
+                        <input  id="campaign_pl" type="text" class="form-control" data-check="url" data-required="true">
                    </div>
                 </div>
                 <div class="form-group">
@@ -124,7 +125,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CPA <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="campaign_expend_t">
                                 <li><a href="#">CPA</a></li>
                                 <li><a href="#">CPC</a></li>
 								<li><a href="#">CPM</a></li>
@@ -141,7 +142,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CNY <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="campaign_expend_c">
                                 <li><a href="#">CNY</a></li>
                                 <li><a href="#">USD</a></li>
                             </ul>
@@ -159,13 +160,13 @@
 						<span class="text-red">*</span>测试比例:
 					</label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true">
+                        <input 	id="campaign_rm" type="text" class="form-control" data-required="true">
                    </div>
                 </div>
 				<div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">备用活动:</label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control">
+                        <input 	id="backup_campaign_id" type="text" class="form-control">
                    </div>
                 </div>
                 <div class="form-group">
@@ -178,7 +179,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             active <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="campaign_status">
                                 <li><a href="#">active</a></li>
                                 <li><a href="#">pause</a></li>
                             </ul>
@@ -204,8 +205,7 @@
 <script src="../js/plugins/select/select.js"></script>
 <!--下拉框插件使用-->
 <script src="../js/style.js"></script>
+<script src="../js/dataset/bwsetjson.js"></script>
 <script src="add_submit.js"></script>
-<script src="campaign_add.js"></script>
-
 </body>
 </html>

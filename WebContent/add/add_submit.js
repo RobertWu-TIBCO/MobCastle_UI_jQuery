@@ -1,13 +1,13 @@
-$(document).ready(function() {
-	var data = {};
+$(function() {
 	$("#buy").on("click", function() {
-		var flag = checkIsLegal();
+		var EditArray = GetEditArray();
 
-		$('[input]').find("id").each(function() {
-			var dom = $(this);
-			data[dom.attr('id')] = dom.val();
-		});
-
-		addLegalCheck();
+		var tableIdElement = $("[id$='_id']");
+		var tablename = tableIdElement.attr('id').split('_')[0];
+	
+		console.log("tablename : " + tablename );
+		var postdata = ReturnJsonStr("add", tablename, "", "", EditArray);
+		var successfunction = editsuccess;
+		ajaxset(postdata, successfunction);
 	});
 });

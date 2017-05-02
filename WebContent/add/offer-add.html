@@ -92,12 +92,13 @@
             </div>
             <div class="wrapper-content">
                 <form class="form-horizontal">
+				<label class="control-label" id="offer_id"></label>
                 <div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">
                         <span class="text-red">*</span>产品:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true">
+                        <input type="text" class="form-control" data-required="true" id="product_id">
                    </div>
                 </div>
                 <div class="form-group">
@@ -105,7 +106,7 @@
                         <span class="text-red">*</span>名称:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true">
+                        <input type="text" class="form-control" data-required="true"  id="offer_name">
                    </div>
                 </div>
 				<div class="form-group">
@@ -113,7 +114,7 @@
                         <span class="text-red">*</span>追踪链接:
                     </label>
                    <div class="col-lg-7 col-md-9 col-sm-12">
-                        <input type="text" class="form-control" data-required="true" data-check="url">
+                        <input type="text" class="form-control" data-required="true" data-check="url" id="offer_click_tl">
                    </div>
                 </div>
                 <div class="form-group">
@@ -122,14 +123,14 @@
 					</label>
                     <div class="input-group date col-lg-2 col-md-3 col-sm-5">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        <input class="form-control" type="text" name="beginTime" data-required="true"/>
+                        <input class="form-control" type="text" name="beginTime" data-required="true" id="offer_s_date"/>
                     </div>
 				</div>
                 <div class="form-group">
 					<label class="control-label col-lg-2 col-md-3 col-sm-12">结束日期:</label>
                     <div class="input-group date col-lg-2 col-md-3 col-sm-5">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        <input class="form-control" type="text" name="endTime" data-required="true"/>
+                        <input id="offer_e_date" class="form-control" type="text" name="endTime" data-required="true"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -142,7 +143,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CPA <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu"  id="offer_earning_t">
                                 <li><a href="#">CPA</a></li>
                                 <li><a href="#">CPC</a></li>
 								<li><a href="#">CPM</a></li>
@@ -159,7 +160,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CNY <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="offer_earning_c">
                                 <li><a href="#">CNY</a></li>
                                 <li><a href="#">USD</a></li>
                             </ul>
@@ -169,7 +170,7 @@
                         <span class="text-red">*</span>结算单价:
                     </label>
                     <div class="col-lg-1 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true" data-check="number">
+                        <input type="text" class="form-control" data-required="true" data-check="number" 	id="offer_earning_n">
                    </div>
                 </div>
 				<div class="form-group">
@@ -180,7 +181,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CPA <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="offer_e_expend_t">
                                 <li><a href="#">CPA</a></li>
                                 <li><a href="#">CPC</a></li>
 								<li><a href="#">CPM</a></li>
@@ -195,7 +196,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CNY <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="offer_e_expend_c">
                                 <li><a href="#">CNY</a></li>
                                 <li><a href="#">USD</a></li>
                             </ul>
@@ -203,19 +204,19 @@
                    </div>
 				   <label class="control-label col-lg-1 col-md-3 col-sm-12">放出单价:</label>
                     <div class="col-lg-1 col-md-3 col-sm-12">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="offer_e_expend_n">
                    </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">量级:</label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" 	id="offer_cap">
                    </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">描述:</label>
                    <div class="col-lg-4 col-md-3 col-sm-12">
-                        <textarea class="form-control textarea-h-80"></textarea>
+                        <textarea class="form-control textarea-h-80" 	id="offer_dcp"></textarea>
                    </div>
                 </div>
                 <div class="form-group">
@@ -228,7 +229,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             private <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="offer_status">
                                 <li><a href="#">private</a></li>
 								<li><a href="#">public</a></li>
                                 <li><a href="#">pause</a></li>
@@ -262,6 +263,7 @@
 <script src="../js/style.js"></script>
 <script src="add_submit.js"></script>
 <script src="offer_add.js"></script>
+<script src="../js/dataset/bwsetjson.js"></script>
 <script src="../js/datasetdatepicker.js"></script>
 </body>
 </html>

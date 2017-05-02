@@ -90,12 +90,13 @@
             </div>
             <div class="wrapper-content">
                 <form class="form-horizontal">
+				<label class="control-label" id="n_id"></label>
                 <div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">
                         <span class="text-red">*</span>邮箱:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-check="email" data-required="true">
+                        <input type="text" class="form-control" data-check="email" data-required="true"  id="n_email">
                    </div>
                 </div>
                 <div class="form-group">
@@ -103,7 +104,7 @@
                         <span class="text-red">*</span>密码:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true">
+                        <input id="n_pwd" type="text" class="form-control" data-required="true">
                    </div>
                 </div>
 				<div class="form-group">
@@ -111,25 +112,25 @@
                         <span class="text-red">*</span>名称:
                     </label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-required="true">
+                        <input type="text" class="form-control" data-required="true" id="n_name">
                    </div>
                 </div>
 				<div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">联系地址:</label>
                    <div class="col-lg-7 col-md-9 col-sm-12">
-                        <input type="text" class="form-control" >
+                        <input type="text" class="form-control" id="n_address">
                    </div>
                 </div>
 				<div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">联系人:</label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="n_concat">
                    </div>
                 </div>
 				<div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">联系电话:</label>
                    <div class="col-lg-2 col-md-3 col-sm-12">
-                        <input type="text" class="form-control" data-check="phone">
+                        <input type="text" class="form-control" data-check="phone" id="n_tel">
                    </div>
                 </div>
                 <div class="form-group">
@@ -142,7 +143,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CPA <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" id="n_earning_t">
                                 <li><a href="#">CPA</a></li>
                                 <li><a href="#">CPC</a></li>
 								<li><a href="#">CPM</a></li>
@@ -159,7 +160,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             CNY <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu"  id="n_earning_c">
                                 <li><a href="#">CNY</a></li>
                                 <li><a href="#">USD</a></li>
                             </ul>
@@ -169,19 +170,19 @@
                 <div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">转化回调:</label>
                    <div class="col-lg-7 col-md-9 col-sm-12">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="n_pl">
                    </div>
                 </div>
 				<div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">链接模板:</label>
                    <div class="col-lg-7 col-md-9 col-sm-12">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="n_tlm">
                    </div>
                 </div>
 				<div class="form-group">
                     <label class="control-label col-lg-2 col-md-3 col-sm-12">描述:</label>
                    <div class="col-lg-4 col-md-3 col-sm-12">
-                        <textarea class="form-control textarea-h-80"></textarea>
+                        <textarea class="form-control textarea-h-80" id="n_dcp" ></textarea>
                    </div>
                 </div>
                 <div class="form-group">
@@ -194,7 +195,7 @@
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             active <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu"  id="n_status">
                                 <li><a href="#">active</a></li>
                                 <li><a href="#">pause</a></li>
                             </ul>
@@ -221,6 +222,7 @@
 <!--下拉框插件使用-->
 <script src="../js/style.js"></script>
 <script src="add_submit.js"></script>
+<script src="../js/dataset/bwsetjson.js"></script>
 <script src="n_add.js"></script>
 </body>
 </html>
